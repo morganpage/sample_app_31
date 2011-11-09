@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title><%= title %></title>
-  
-  <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-  <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
- 	<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-  
-  <%= stylesheet_link_tag    "menu_style" %>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+	<head>
+	  <title><%= title %></title>
+	  
+	  <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+	  <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+	 	<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+	  
+	  <%= stylesheet_link_tag    "menu_style" %>
+	  <%= stylesheet_link_tag    "application" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<%= image_tag("logo.png",:alt => "Sample app",:class => "round")%>
+					<nav class="menu">
+						<ul>
+							<li><a href="#" >Home</a></li>
+							<li><a href="#" id="current">Products</a>
+								<ul>
+									<li><a href="#">Drop Down CSS Menus</a></li>
+									<li><a href="#">Horizontal CSS Menus</a></li>
+									<li><a href="#">Vertical CSS Menus</a></li>
+									<li><a href="#">Dreamweaver Menus</a></li>
+							   </ul>
+						  </li>
+							<li><a href="/faq.php">FAQ</a>
+				                <ul>
+				                <li><a href="#">Drop Down CSS Menus</a></li>
+				                <li><a href="#">Horizontal CSS Menus</a></li>
+				                <li><a href="#">Vertical CSS Menus</a></li>
+				                <li><a href="#">Dreamweaver Menus</a></li>
+				                </ul>
+				          </li>
+							<li><a href="/contact/contact.php">Contact</a></li>
+						</ul>
+					</nav>
+				
+			</header>
+			<section class="round">
+				<%= yield %>
+				
+			</section>
+		</div>
+	
+	</body>
 </html>
