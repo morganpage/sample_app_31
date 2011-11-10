@@ -12,6 +12,7 @@ class PagesController < ApplicationController
   def spacedust
     @title = "Space Dust"
   end
+  
   #TUTORIALS
   def unity
     @title = "Unity Tutorials"
@@ -19,6 +20,10 @@ class PagesController < ApplicationController
   def blender
     @title = "Blender Tutorials"
   end
+  def rubyonrails
+    @title = "Ruby On Rails Tutorials"
+  end
+  
   #REVIEWS
   def gamereviews
     @title = "Game Reviews"
@@ -26,5 +31,8 @@ class PagesController < ApplicationController
   def modelreviews
     @title = "Model Reviews"
   end
+  
+  #HOBBIES
+  
   
 end

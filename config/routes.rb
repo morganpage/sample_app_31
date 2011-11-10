@@ -9,6 +9,7 @@ SampleApp31::Application.routes.draw do
   #TUTORIALS
   match '/unity', :to => 'pages#unity'
   match '/blender', :to => 'pages#blender'
+  match '/rubyonrails', :to => 'pages#rubyonrails'
 
   #REVIEWS
   match '/gamereviews', :to => 'pages#gamereviews'
