@@ -1,9 +1,7 @@
 class PagesController < ApplicationController
   
   def home
-    @title = "The Home Page"
-    @twitter = "#"
-    @facebook = "#"
+    @title = "Latest News"
   end
   #GAMES
   def islesurvive
