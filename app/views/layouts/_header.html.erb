@@ -2,34 +2,35 @@
 	<%= image_tag("logo.png",:alt => "Morgan Page",:class => "round")%>
 		<nav class="menu">
 			<ul>
-				<li><a href="#" >Home</a></li>
+				<li><%= link_to "Home",root_path %></a>
+
+				</li>
 				<li><a href="#" id="current">Games</a>
 					<ul>
-						<li><a href="#">Isle Survive</a></li>
-						<li><a href="#">Space Dust</a></li>
+						<li><%= link_to "Isle Survive",islesurvive_path %></li>
+						<li><%= link_to "Space Dust",spacedust_path %></li>
 				   </ul>
 			  </li>
-				<li><a href="/faq.php">Tutorials</a>
+				<li><a href="#">Tutorials</a>
 					<ul>
-            <li><a href="#">Unity</a></li>
-            <li><a href="#">Blender</a></li>
+						<li><%= link_to "Unity",unity_path %></li>
+						<li><%= link_to "Blender",blender_path %></li>
           </ul>
         </li>
-				<li><a href="/faq.php">Reviews</a>
+				<li><a href="#">Reviews</a>
 					<ul>
-            <li><a href="#">Game Reviews</a></li>
-            <li><a href="#">Model Reviews</a></li>
+						<li><%= link_to "Game Reviews",gamereviews_path %></li>
+						<li><%= link_to "Model Reviews",modelreviews_path %></li>
           </ul>
         </li>
-				<li><a href="/faq.php">Hobbies</a>
+				<li><a href="#">Hobbies</a>
 					<ul>
-            <li><a href="#">Paragliding</a></li>
-            <li><a href="#">Snowboarding</a></li>
-            <li><a href="#">Walking</a></li>
-            <li><a href="#">Music</a></li>
+						<li><%= link_to "Paragliding",paragliding_path %></li>
+						<li><%= link_to "Snowboarding",snowboarding_path %></li>
+						<li><%= link_to "Walking",walking_path %></li>
+						<li><%= link_to "Music",music_path %></li>
           </ul>
         </li>
-				<li><a href="/contact/contact.php">Contact</a></li>
 			</ul>
 		</nav>
 </header>

@@ -1,9 +1,24 @@
 SampleApp31::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/contact"
   
-  get "pages/test"
+  root :to => 'pages#home'
+  
+  #GAMES
+  match '/islesurvive', :to => 'pages#islesurvive'
+  match '/spacedust', :to => 'pages#spacedust'
+
+  #TUTORIALS
+  match '/unity', :to => 'pages#unity'
+  match '/blender', :to => 'pages#blender'
+
+  #REVIEWS
+  match '/gamereviews', :to => 'pages#gamereviews'
+  match '/modelreviews', :to => 'pages#modelreviews'
+
+  #Hobbies    
+  match '/paragliding', :to => 'pages#paragliding'
+  match '/snowboarding', :to => 'pages#snowboarding'
+  match '/walking', :to => 'pages#walking'
+  match '/music', :to => 'pages#music'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,11 +1,30 @@
 class PagesController < ApplicationController
+  
   def home
+    @title = "The Home Page"
+    @twitter = "#"
+    @facebook = "#"
   end
-
-  def contact
+  #GAMES
+  def islesurvive
+    @title = "Isle Survive"
   end
-
-  def test
-    
+  def spacedust
+    @title = "Space Dust"
   end
+  #TUTORIALS
+  def unity
+    @title = "Unity Tutorials"
+  end
+  def blender
+    @title = "Blender Tutorials"
+  end
+  #REVIEWS
+  def gamereviews
+    @title = "Game Reviews"
+  end
+  def modelreviews
+    @title = "Model Reviews"
+  end
+  
 end
