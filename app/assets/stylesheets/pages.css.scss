@@ -5,17 +5,25 @@
   width: 700px;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
-  background: #595959;
+  background: black;
+  background-image:url('spacescene.png');
+  background-repeat:no-repeat;
+  background-position:center top;
 }
 
 header {
-  padding-top: 20px;
+  padding-top: 1em;
 }
 
 header img {
-  padding: 1em;
+ 
   background: white;
+  max-width: 100%;
 }
 
 section {
@@ -24,9 +32,6 @@ section {
   font-size: 120%;
   padding: 20px;
   background: #fff;
-}
-img {
-  max-width: 100%;
 }
 
 

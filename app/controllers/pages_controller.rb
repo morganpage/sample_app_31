@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   
   def home
-    @title = "Latest News"
+    @title = "Welcome to Plato Evolved!!!"
   end
   #GAMES
   def islesurvive
