@@ -1,6 +1,7 @@
 SampleApp31::Application.routes.draw do
   
   root :to => 'pages#home'
+  match '/sitemap', :to => 'sitemap#index'
   
   #GAMES
   match '/islesurvive', :to => 'pages#islesurvive'
